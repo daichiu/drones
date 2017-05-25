@@ -19,6 +19,8 @@ $(document).ready(function(){
         }
     });
 });
+
+
 function pak(result){
     for(var i = 0; i<result.strike.length; i++){
         if(result.strike[i].country==="Pakistan"){
@@ -28,3 +30,12 @@ function pak(result){
 }
 
 console.log(pakistan);
+
+
+function myMap() {
+    var mapProp = {
+        center:new google.maps.LatLng(37.8716, -122.2727),
+        zoom: 15,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
