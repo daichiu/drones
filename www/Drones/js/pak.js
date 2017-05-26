@@ -51,7 +51,7 @@ function myMap(result) {
     //get all the lat and lon coordinates into coordinates array
     for (var i = 0; i < pakistan.length; i++) {
         var location = new latLng(pakistan[i].lat, pakistan[i].lon);
-        console.log(location);
+        //console.log(location);
         coordinates.push(location);
     }
     var markers = coordinates.map(function(location) {
@@ -63,6 +63,6 @@ function myMap(result) {
     //var markerCluster= new MarkerClusterer(map, markers,)
 }
 
-console.log(coordinates);
-console.log("coordinates array");
+//console.log(coordinates);
+//console.log("coordinates array");
 
