@@ -60,7 +60,10 @@ function myMap(result) {
             position: location
         });
     });
-    //var markerCluster= new MarkerClusterer(map, markers,)
+    var markerCluster = new MarkerClusterer(map, markers,
+        {imagePath: "../clusters_images/marker"});
+        //console.log("hi");
+
 }
 
 //console.log(coordinates);
